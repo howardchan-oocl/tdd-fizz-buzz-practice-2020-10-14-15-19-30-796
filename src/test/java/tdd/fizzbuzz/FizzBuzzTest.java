@@ -41,4 +41,13 @@ public class FizzBuzzTest {
 
         assertEquals("Whizz", fizzBuzz.countOff(order));
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_input_is_multiple_of_3and5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        int order = 15;
+
+        assertEquals("FizzBuzz", fizzBuzz.countOff(order));
+    }
 }
