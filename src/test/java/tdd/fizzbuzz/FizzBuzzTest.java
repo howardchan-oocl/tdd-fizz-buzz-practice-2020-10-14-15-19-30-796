@@ -50,4 +50,13 @@ public class FizzBuzzTest {
 
         assertEquals("FizzBuzz", fizzBuzz.countOff(order));
     }
+
+    @Test
+    public void should_return_FizzWhizz_when_input_is_multiple_of_3and7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        int order = 21;
+
+        assertEquals("FizzWhizz", fizzBuzz.countOff(order));
+    }
 }
