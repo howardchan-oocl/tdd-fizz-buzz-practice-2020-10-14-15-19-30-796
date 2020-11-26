@@ -10,11 +10,13 @@ public class FizzBuzz {
     public static final int MODULE_7 = 7;
 
     public String countOff(int order) {
-        if (order % MODULE_3 == 0) {
+        if (order % MODULE_3 == 0 && order % MODULE_5 == 0) {
+            return FIZZ+BUZZ;
+        } else if (order % MODULE_3 == 0) {
             return FIZZ;
-        }else if (order % MODULE_5 == 0) {
+        } else if (order % MODULE_5 == 0) {
             return BUZZ;
-        }else if (order % MODULE_7 ==0) {
+        } else if (order % MODULE_7 == 0) {
             return WHIZZ;
         }
         return String.valueOf(order);
