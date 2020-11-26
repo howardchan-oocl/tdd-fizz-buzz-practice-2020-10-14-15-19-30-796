@@ -11,7 +11,9 @@ public class FizzBuzz {
 
     public String countOff(int order) {
         if (order % MODULE_3 == 0 && order % MODULE_5 == 0) {
-            return FIZZ+BUZZ;
+            return FIZZ + BUZZ;
+        } else if (order % MODULE_3 == 0 && order % MODULE_7 == 0) {
+            return FIZZ + WHIZZ;
         } else if (order % MODULE_3 == 0) {
             return FIZZ;
         } else if (order % MODULE_5 == 0) {
